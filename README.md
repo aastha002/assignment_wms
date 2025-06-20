@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**📦 Multiple Location Warehouse Management System (WMS)**
 
-## Getting Started
+A Warehouse Management System (WMS) built using Next.js and Firebase that helps businesses manage inventory across multiple warehouse locations. It features user authentication, role-based access, inventory operations, real-time updates, and reporting support.
 
-First, run the development server:
+🚀 Live Demo
+Vercel Link - https://assignment-wms.vercel.app/auth/login
+GitHub Link - https://github.com/aastha002/assignment_wms
 
-```bash
+📚 Table of Contents
+Features
+
+Tech Stack
+Project Structure
+Setup Instructions
+Usage Guide
+Future Scope
+
+✅ Features
+🔑 User Authentication
+Login functionality (via Firebase Auth)
+
+Role-based access:
+
+Admin: Manage warehouses & inventory
+
+Manager/Staff: Perform day-to-day stock operations
+
+Firebase Firestore stores user roles
+
+📦 Inventory Management
+Add, edit, delete inventory items
+
+View inventory by warehouse
+
+Search & filter functionality
+
+🏢 Warehouse Management
+Add/edit warehouse locations
+
+View all items in each warehouse
+
+🔄 Stock Operations
+Track incoming (entries) and outgoing (exits) stock
+
+(Feature planned) Transfers between warehouses
+
+📊 Reporting
+View inventory levels (basic implemented)
+
+Generate transaction history (Planned feature)
+
+⚙️ Admin Dashboard
+Real-time overview of warehouses and inventory status
+
+Alerts for low-stock items (Planned feature)
+
+
+Tech Stack - 
+
+Next.js -	React framework for frontend
+Firebase	 - Firestore DB + Auth + Hosting
+Tailwind CSS	 - For styling the UI
+GitHub Actions -	CI/CD Deployment
+
+🗂️ Project Structure
+├── components/        // UI Components (Sidebar, InventoryTable)
+├── context/           // Auth Context (Firebase-based)
+├── pages/             // Next.js Routes
+│   ├── auth/login.js
+│   ├── dashboard.js
+│   ├── inventory/index.js
+│   ├── warehouses/index.js
+│   └── reports/index.js
+├── services/          // Firebase Firestore Service Layer
+├── styles/            // Tailwind CSS
+├── lib/               // Firebase Config
+├── .env.local         // Firebase API Keys (ignored by git)
+
+
+⚙️ Setup Instructions
+1️⃣ Clone the repository
+
+git clone https://github.com/aastha002/assignment_wms.git
+cd assignment_wms
+
+2️⃣ Install dependencies
+
+npm install
+
+Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👥 Usage Guide
+▶️ Login Credentials
+You can register new users manually in Firebase Console or modify the code to support user registration.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+For testing:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Email: admin@example.com
 
-## Learn More
+Password: password123
 
-To learn more about Next.js, take a look at the following resources:
+🔮 Future Scope
+✅ Add proper warehouse inventory view (basic available)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🚧 Reports & Export PDFs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🚧 Role-based dashboards
 
-## Deploy on Vercel
+🚧 Stock Transfer between Warehouses
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🚧 Add user management (create/delete users from app)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
